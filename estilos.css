@@ -1,0 +1,81 @@
+body{
+    background-attachment: fixed;
+    background: url('https://img.freepik.com/foto-gratis/fondo-cielo-rosa-luna-creciente_53876-129048.jpg'); 
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+    font-family: confor;
+}
+
+
+
+@font-face{
+  font-family:School_year;
+  src: url(/school_year/SchoolYear.ttf);
+}
+
+.tituloa{
+  text-align: center;
+  font-family:School_year;
+  font-size: 500%
+}
+
+@font-face{
+  font-family:Alice_Smile;
+  src: url(/alice_smile/AliceSmile.ttf);
+}
+
+.titulob{
+  text-align: center;
+  font-family:Alice_Smile;
+  font-size: 500%
+}
+
+@font-face{
+  font-family:buttershine_serif;
+  src: url(/buttershine_serif/BUTTERSHINESERIF.otf);
+}
+
+.texto{
+  font-family: buttershine_serif;
+  font-size: 150%;
+}
+
+.descripDePag{
+  margin: 2rem;
+}
+
+.cuadro{
+  word-wrap: break-word;
+  border-style:dashed;
+  background-color: rgba(255, 255, 255, 0.404);
+  margin: 1rem;
+}
+
+.cuadrodetareas{
+  word-wrap: break-word;
+  border-style:double;
+  background-color: rgba(255, 255, 255, 0.404);
+  margin: 1rem;
+}
+
+.divider:after,
+.divider:before {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #eee;
+}
+
+
+.corrected {
+  margin: 15px;
+}
+
+.donete {
+  background-size: auto;
+  background-repeat: no-repeat;
+  width: max-content;
+  text-decoration: line-through;
+}
