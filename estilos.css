@@ -1,6 +1,6 @@
 body{
     background-attachment: fixed;
-    background: url('https://img.freepik.com/foto-gratis/fondo-cielo-rosa-luna-creciente_53876-129048.jpg'); 
+    background: url('https://wwwhatsnew.com/wp-content/uploads/2022/03/Estas-son-las-mejores-apps-de-fondos-de-pantalla-4K-y-QHD-para-2022.jpg'); 
     background-blend-mode: darken;
     background-repeat: no-repeat;
     background-size: cover;
@@ -17,6 +17,7 @@ body{
 
 .tituloa{
   text-align: center;
+  color: aliceblue;
   font-family:School_year;
   font-size: 500%
 }
@@ -28,7 +29,22 @@ body{
 
 .titulob{
   text-align: center;
+  color: aliceblue;
+  margin-top: 5rem !important;
   font-family:Alice_Smile;
+  font-size: 500%
+}
+
+@font-face{
+  font-family:cine;
+  src: url(/cinema_st/cinema_st.ttf);
+}
+
+.tituloc{
+  text-align: center;
+  color: aliceblue;
+  margin-top: 5rem !important;
+  font-family:cine;
   font-size: 500%
 }
 
@@ -39,6 +55,7 @@ body{
 
 .texto{
   font-family: buttershine_serif;
+  color: aliceblue;
   font-size: 150%;
 }
 
