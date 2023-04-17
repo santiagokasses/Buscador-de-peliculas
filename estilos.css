@@ -55,6 +55,9 @@ body{
 .texto{
   font-family: kong;
   font-size: 150%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .descripDePag{
