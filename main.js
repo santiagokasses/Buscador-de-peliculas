@@ -17,7 +17,7 @@ fetch(link)
     .then(res => {
         console.log("obtuve respuesta")
         valores = document.getElementById("peliculasEncontradas");
-        array.forEach(actual => {
+        forEach(actual => {
             pelicula = document.createElement("li")
             pelicula.innerHTML = `Titulo: ${actual.Title} - fecha: ${actual.Released} - director: ${actual.Director}`
             valores.appendChild(pelicula) 
