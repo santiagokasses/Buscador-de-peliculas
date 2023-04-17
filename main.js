@@ -1,19 +1,28 @@
+var link = "https://www.omdbapi.com/?apikey=8f8de035&";
+
+var buscarporesto;
+
+function buscarpor (){
+    var nombrePelicula = document.getElementById("porTitulo")
+    var añoPelicula = document.getElementById("porAño")
+    var directorPelicula = document.getElementById("porDirector")
+    buscarporesto = "s=" + nombrePelicula
+}
+
+link += buscarporesto;
+
 console.log("Hago consulta - fetch")
-fetch("https://www.omdbapi.com/?i=tt3896198&apikey=8f8de035")
+fetch(link)
     .then(res => res.json())
     .then(res => {
         console.log("obtuve respuesta")
         valores = document.getElementById("peliculasEncontradas");
-        res.forEach(actual => {
-            if (actual.Title && actual.Released) {
+        array.forEach(actual => {
             pelicula = document.createElement("li")
-            pelicula.innerHTML = `Titulo: ${actual.Title} - fecha: ${actual.Released} - firector: ${actual.Director}`
-            valores.appendChild(pelicula)
-            }
-        })
-
+            pelicula.innerHTML = `Titulo: ${actual.Title} - fecha: ${actual.Released} - director: ${actual.Director}`
+            valores.appendChild(pelicula) 
+        });
     })
-    .catch(err => console.error("error", err))
 console.log("Fin consulta - fetch")
 
 /*console.log("Hago consulta - axios");
