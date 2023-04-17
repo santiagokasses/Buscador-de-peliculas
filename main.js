@@ -1,4 +1,6 @@
-const productoAbuscar = document.getElementById(nombredelproducto);
+const productoAbuscarpornombre = document.getElementById(porproducto);
+const productoAbuscarporprecio = document.getElementById(porprecio);
+const productoAbuscarporcategoria = document.getElementById(porcategoria);
 
 console.log("Hago consulta - fetch")
 fetch("https://dummyjson.com/products")
