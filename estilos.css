@@ -48,13 +48,13 @@ body{
 }
 
 @font-face{
-  font-family:cinefontnormal;
-  src: url(/cinematografica/Cinematografica-Regular-trial.ttf);
+  font-family:kong;
+  src: url(/singkong/Singkong.ttf);
 }
 
 .texto{
-  font-family: cinefontnormal;
-  font-size: 600%;
+  font-family: kong;
+  font-size: 150%;
 }
 
 .descripDePag{
