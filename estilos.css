@@ -1,6 +1,6 @@
 body{
     background-attachment: fixed;
-    background: url('https://images3.alphacoders.com/744/thumb-1920-744829.jpg'); 
+    background: url('https://img.freepik.com/vector-gratis/vector-fondo-abstracto-flor-memphis-linea-arte_53876-154332.jpg?w=1380&t=st=1681732398~exp=1681732998~hmac=e63a6f9a48a9bf18cfbb3aba623026ace7eaa23a7d9afca66808223822c847eb'); 
     background-blend-mode: darken;
     background-repeat: no-repeat;
     background-size: cover;
@@ -36,15 +36,14 @@ body{
 }
 
 @font-face{
-  font-family:cine;
-  src: url(/cinema_st/cinema_st.ttf);
+  font-family:cursiva;
+  src: url(/anteri_signature/AnteriSignature_PERSONAL_USE_ONLY.otf);
 }
 
 .tituloc{
   text-align: center;
-  color: aliceblue;
   margin-top: 1rem !important;
-  font-family:cine;
+  font-family:cursiva;
   font-size: 500%
 }
 
