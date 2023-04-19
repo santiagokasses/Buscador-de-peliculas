@@ -17,6 +17,18 @@
     <div class="card-body p-4 responsive" style="margin: 4%; margin-top: 1%;">
 
         <h1 class="pb-3 tituloc">Buscador de productos</h1>
+
+        <div class="input-group-prepend">
+          <button class="btn btn-outline dropdown-toggle colorbotton" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Buscar por</button>
+          <div class="dropdown-menu">
+            <p class="dropdown-item" id="porproducto">Producto</p>
+            <p class="dropdown-item" id="porprecio">Precio</p>
+            <p class="dropdown-item" id="porcategoria">Categoria</p>
+          </div>
+        </div>
+        <input type="text" class="form-control" aria-label="Text input with dropdown button" placeholder="buscar...">
+      </div>
+      
           
           <form>
             <div class="texto">
@@ -29,8 +41,15 @@
             </div>
             <button type="button" id="item" class="btn colorbotton text" onclick="buscarProducto()">Buscar</button>
           </form>          
-        
-          <div class="" id="productosencontrados"></div>
+
+          <div class=" swiper mySwiper container swiper-container" style="text-align:center;">
+            <div class="swiper-wrapper content maxtam">
+              <div class="row diseñocards" id="productosencontrados"></div>
+            </div>
+          </div>
+
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
 
         <script src="main.js"></script>
 
