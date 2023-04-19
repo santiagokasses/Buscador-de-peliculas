@@ -32,17 +32,22 @@ const buscarProducto = () => {
     const productoAbuscarpornombre = document.getElementById("porproducto").value;
     fetch(`https://dummyjson.com/products/search?q=${productoAbuscarpornombre}`)
     .then(res => res.json())
-    .then(res =>  {
-        valores = document.getElementById("productosencontrados").innerHTML += `
-        <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="${json().images}" alt="Card image cap">
-        <div class="card-body">
-        <h5 class="card-title">${res.producto.title}</h5>
-        <p class="card-text"${res.description}</p>
-        <h6 class="card-title">${res.price}</h6>
-        </div>
-      </div>`
+    .then(res =>  { 
+        res.products.forEach(i => {
+            valores = document.getElementById("productosencontrados").innerHTML += `
+            <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="${i.images[0]}" alt="Card image cap">
+            <div class="card-body">
+            <h5 class="card-title">${i.title}</h5>
+            <p class="card-text"${i.description}</p>
+            <h6 class="card-title">${i.price}</h6>
+            </div>
+            </div>`
         })
+        
+      console.log(res)
+        })
+        
     .catch(err => console.error(err))
 }
 /*const buscarProducto = () => {
