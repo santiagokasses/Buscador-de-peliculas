@@ -1,6 +1,7 @@
 body{
+  min-height: 100vh;
     background-attachment: fixed;
-    background: url('https://img.freepik.com/vector-gratis/vector-fondo-abstracto-flor-memphis-linea-arte_53876-154332.jpg?w=1380&t=st=1681732398~exp=1681732998~hmac=e63a6f9a48a9bf18cfbb3aba623026ace7eaa23a7d9afca66808223822c847eb'); 
+    background: url('https://img.freepik.com/vector-gratis/vector-fondo-abstracto-flor-memphis-linea-arte_53876-154332.jpg?w=1380&t=st=1681732398~exp=1681732998~hmac=e63a6f9a48a9bf18cfbb3aba623026ace7eaa23a7d9afca66808223822c847eb') no-repeat center center fixed; 
     background-blend-mode: darken;
     background-repeat: no-repeat;
     background-size: cover;
@@ -11,7 +12,31 @@ body{
 .diseñocards{
   display: flex;
   justify-content: space-between;
+  width: 100%;
+  margin: 20px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+  cursor: default;
+  transition: all 400ms ease;
+  padding: 0px !important;
 }
+.diseñocards:hover{
+  box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+  transform: translateY(-3%);
+}
+
+.diseñocards .contenido{
+  padding: 15px;
+  text-align: center;
+}
+.card-img-top {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
+
 
 @font-face{
   font-family:School_year;
@@ -102,12 +127,18 @@ body{
 }
 
 .colorbotton{
-  background-color: black;
-  color: aliceblue;
+  background-color: black !important;
+  color: aliceblue !important;
+  text-decoration: none;
+  display: inline-block;
+
+  
 }
-
-
-
+.colorbotton:hover{
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: all 400ms ease;
+}
 
 @media (max-width: 768px) {
   .carousel-inner .carousel-item > div {
@@ -141,4 +172,8 @@ body{
 .carousel-inner .carousel-item-right,
 .carousel-inner .carousel-item-left{ 
 transform: translateX(0);
+}
+
+.columna{
+  margin-bottom: 2rem;
 }
