@@ -131,8 +131,8 @@ body{
   color: aliceblue !important;
   text-decoration: none;
   display: inline-block;
-
-  
+  margin-left: 0.1rem;
+  margin-right: 0.1rem;
 }
 .colorbotton:hover{
   transform: scale(1.1);

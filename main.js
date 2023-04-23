@@ -17,6 +17,10 @@ const verInformacion = (titulo, imagen, descripcion, precio) =>{
     document.getElementById("precio").innerHTML= `$${precio}`
 }
 
+const LimparLista = () =>{
+    document.getElementById("productosencontrados").innerHTML = ``
+}
+
 const buscarProducto = () => {
     let link = ""
     if(idBuscar == undefined)
