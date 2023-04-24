@@ -177,3 +177,6 @@ transform: translateX(0);
 .columna{
   margin-bottom: 2rem;
 }
+.dropdown-menu{
+  cursor: default;
+}

@@ -27,18 +27,22 @@ const buscarProducto = () => {
     {
         alert("Seleccione una categoria de busqueda")
     }
-    else if(idBuscar == "Producto")
+    else if(idBuscar == "Producto" && document.getElementById("Producto").value != "")
     {
         var productoAbuscarpornombre = document.getElementById("Producto").value
         link = "https://dummyjson.com/products/search?q=" + productoAbuscarpornombre
     }
-    else if(idBuscar == "ID"){
+    else if(idBuscar == "ID" && document.getElementById("ID").value != ""){
         var productoAbuscarporID = document.getElementById("ID").value
         link = "https://dummyjson.com/products/" + productoAbuscarporID
     }
-    else if(idBuscar == "Categoria"){
+    else if(idBuscar == "Categoria" && document.getElementById("Categoria").value != ""){
         var productoAbuscarporcategoria = document.getElementById("Categoria").value
         link = "https://dummyjson.com/products/category/" + productoAbuscarporcategoria
+    }
+    else
+    {
+        alert("error de ingreso")
     }
     fetch(link)
     .then(res => res.json())
@@ -56,7 +60,6 @@ const buscarProducto = () => {
                     </div>
                 </div>`
             })
-            
         }
         else if(res.length = 1){
             valores = document.getElementById("productosencontrados").innerHTML += `
