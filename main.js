@@ -56,7 +56,7 @@ const buscarProducto = () => {
                         <h5 class="card-title">${i.title}</h5>
                         <p class="card-text"> ${i.description}</p>
                         <h6 class="card-title">$${i.price}</h6>
-                        <button type="button" class="btn colorbotton text" data-bs-toggle="modal" data-bs-target="#ModalInfo" onclick="verInformacion('${i.title}','${i.thumbnail}','${i.description}','${i.price}')">ver producto</button>
+                        <button type="button" class="btn colorbotton text" data-bs-toggle="modal" data-bs-target="#ModalInfo" onclick="verInformacion('${i.title}','${i.thumbnail}','${i.description}','${i.price}')">Ver producto</button>
                     </div>
                 </div>`
             })
@@ -69,7 +69,7 @@ const buscarProducto = () => {
                     <h5 class="card-title">${res.title}</h5>
                     <p class="card-text"> ${res.description}</p>
                     <h6 class="card-title">$${res.price}</h6>
-                    <button type="button" class="btn colorbotton text" data-bs-toggle="modal" data-bs-target="#ModalInfo" onclick="verInformacion('${res.title}','${res.thumbnail}','${res.description}','${res.price}')">ver producto</button>
+                    <button type="button" class="btn colorbotton text" data-bs-toggle="modal" data-bs-target="#ModalInfo" onclick="verInformacion('${res.title}','${res.thumbnail}','${res.description}','${res.price}')">Ver producto</button>
                 </div>
             </div>`
         }
