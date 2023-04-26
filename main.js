@@ -17,7 +17,7 @@ const verInformacion = (titulo, imagen, descripcion, precio) =>{
     document.getElementById("precio").innerHTML= `$${precio}`
 }
 
-const LimparLista = () =>{
+const limparLista = () =>{
     document.getElementById("productosencontrados").innerHTML = ``
 }
 
